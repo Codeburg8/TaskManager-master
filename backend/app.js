@@ -6,7 +6,8 @@ const Task = require('./model/task');
 
 const app = express();
 
-mongoose.connect("mongodb://localhost/task_manager", {useNewUrlParser: true})
+// mongoose.connect("mongodb://localhost/task_manager", {useNewUrlParser: true})
+mongoose.connect("mongodb+srv://Jacob:zCXQR0HaYi9OIujc@cluster0-po8me.mongodb.net/task_manager?retryWrites=true", {useNewUrlParser: true})
 .then(() => {
     console.log("connected to the database");
 })
